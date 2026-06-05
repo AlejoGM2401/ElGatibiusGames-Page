@@ -95,7 +95,7 @@ html{
     width: 200px;
     height: 200px;
     align-self: center;
-    background-image: url(/Assets/Retrato.png);
+    background-image: url(./Assets/Retrato.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
