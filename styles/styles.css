@@ -1,3 +1,10 @@
+/*
+    1ro - Posicionamiento (Static, Absolute, Relative, Fixed)
+    2do - Modelo de caja (box model) Margin, Padding, Size
+    3ro - Tipografia
+    4to - Visuales (Shadow, Border Radius)
+    5to - Otros
+*/
 :root{
     --background: #0B0B0B;
     --background-sec: #1A1A1A;
@@ -23,14 +30,14 @@ html{
 .nav-bar{
     display: flex;
     width: 100%;
-    height: auto;
+    height: 10%;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10px;
+    padding: 10px 10px;
 }
 .nav-bar--menu{
-    width: 32px;
-    height: 32px;
+    width: 40px;
+    height: 40px;
 }
 .nav-bar--menu:hover{
     transition: all 0.5s ease;
@@ -44,10 +51,52 @@ html{
 }
 
 .nav-bar--language{
-    width: 32px;
-    height: 32px;
+    width: 40px;
+    height: 40px;
 }
 .nav-bar--language:hover{
     transition: all 0.5s ease;
     transform: scale(1.3);
+}
+.main-presentation-container{
+    width: 100%;
+    height: auto;
+    padding: 15px;
+}
+.main-presentation--card{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    max-width: 800px;
+    height: fit-content;
+    background-color: var(--background-sec);
+    padding: 15px 10px;
+    border-radius: 12px;
+    box-shadow: inset 0 0 15px white;
+}
+.main-presentation--card h1{
+    text-align: center;
+    font-size: 2.2rem;
+    color: var(--red-strong);
+    font-weight: 300;
+}
+.main-presentation--card p{
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    color: var(--text-color);
+}
+.main-presentation--card .portrait{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 200px;
+    height: 200px;
+    align-self: center;
+    background-image: url(/Assets/Retrato.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
