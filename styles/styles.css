@@ -26,6 +26,7 @@ html{
     font-family: "Jersey 10", sans-serif;
     scroll-behavior: smooth;
     background-color: var(--background);
+    scroll-behavior: smooth;
 }
 .nav-bar{
     display: flex;
@@ -34,6 +35,8 @@ html{
     justify-content: space-between;
     align-items: center;
     padding: 10px 10px;
+    margin-bottom: 5px;
+    box-shadow: 2px 0px 15px rgba(255, 0, 0, 0.5)
 }
 .nav-bar--menu{
     width: 40px;
@@ -70,7 +73,7 @@ html{
     justify-content: center;
     align-items: center;
     width: 95%;
-    max-width: 800px;
+    max-width: 600px;
     height: fit-content;
     background-color: var(--background-sec);
     padding: 15px 10px;
@@ -81,12 +84,13 @@ html{
     text-align: center;
     font-size: 2.2rem;
     color: var(--red-strong);
-    font-weight: 300;
+    font-weight: 200;
 }
 .main-presentation--card p{
     text-align: center;
     font-size: 1.8rem;
     line-height: 2.2rem;
+    font-weight: 300;
     color: var(--text-color);
 }
 .main-presentation--card .portrait{
@@ -96,6 +100,162 @@ html{
     height: 200px;
     align-self: center;
     background-image: url(../Assets/Retrato.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.game-cards-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.game-cards-container h2{
+    font-size: 2.2rem;
+    color: var(--red-shadow);
+    font-weight: 100;
+    text-align: center;
+    margin: 15px 10px;
+}
+.game-cards--grid{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    place-content: center;
+    justify-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.game-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-width: 270px;
+    max-width: 400px;
+    width: 90%;
+    height: auto;
+    padding: 10px;
+    background-color: var(--background-sec);
+    border-radius: 12px;
+    box-shadow: 3px 5px 10px rgba(255, 0, 0, 0.5);
+}
+.game-card:hover{
+    transition: all ease 1s;
+    transform: scale(1.1);
+}
+.game-card img{
+    width: 200px;
+    height: 200px;
+}
+.game-card .game-title{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    color: var(--red-shadow);
+    font-weight: 300;
+    
+}
+.game-card .game-description{
+    font-size: 1.6rem;
+    color: var(--text-color);
+    line-height: 1.8rem;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.game-card .download-label{
+    font-size: 1.4rem;
+    color: var(--text-sec);
+    font-weight:lighter;
+    margin-bottom: 10px;
+}
+.game-card a{
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: var(--cyan-neon);
+    font-weight: lighter;
+}
+
+footer{
+    min-width: 320px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    background-color: var(--background-sec);
+}
+.footer-up{
+    display: flex;
+    justify-content: space-around;
+}
+.footer-up--legal{
+    width: 50%;
+    font-size: 1.4rem;
+    font-weight: lighter;
+}
+.footer-up--legal{
+    width: 50%;
+    font-size: 1.4rem;
+    font-weight: lighter;
+    line-height: 1.8rem;
+    color: var(--text-sec);
+}
+.footer-up--legal .company-name{
+    color: var(--red-strong);
+    font-weight: lighter;
+}
+
+.footer-up--social{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+}
+.footer-up--social a{
+    display: inline-flex;
+    gap: 5px;
+    height: 30px;
+    width: 100%;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: var(--cyan-neon);
+}
+.footer-up--social span{
+    width: 24px;
+    height: 24px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.footer-up--social .tiktok{
+    background-image: url(../Assets/social-network/tiktok.png);
+}
+.footer-up--social .youtube{
+    background-image: url(../Assets/social-network/youtube.png);
+}
+.footer-up--social .insta{
+    background-image: url(../Assets/social-network/instagram.png);
+}
+.footer-up--social .itch{
+    background-image: url(../Assets/social-network/itch-io-logo.png);
+}
+.footer-down{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.footer-down--ElGatibius{
+    margin: 0 auto;
+    width: 40px;
+    height: 40px;
+    background-image: url(../Assets/Gato-Logo.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
