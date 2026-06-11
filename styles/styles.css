@@ -81,6 +81,7 @@ html{
     box-shadow: inset 0 0 15px white;
 }
 .main-presentation--card h1{
+    margin-bottom: 20px;
     text-align: center;
     font-size: 2.2rem;
     color: var(--red-shadow);

@@ -14,13 +14,13 @@
     <header class="nav-bar">
         <img src="./Assets/menu-icon.png" alt="menu" class="nav-bar--menu">
         <img src="./Assets/Logo ElGatibius.png" alt="logo header" class="nav-bar--logo">
-        <img src="./Assets/language-icon.png" alt="language menu" class="nav-bar--language">
+        <img src="./Assets/language-icon.png" alt="language menu" class="nav-bar--language" id="lang-button">
     </header>
     <body>
         <section class="main-presentation-container">
             <div class="main-presentation--card">
-                <h1>El día que casi explota una computadora...</h1>
-                <p>Soy Alejandro García, desarrollador indie de Bogotá y estudiante de Ingeniería de Software.<br>
+                <h1 id="about-title">El día que casi explota una computadora...</h1>
+                <p id="about-text">Soy Alejandro García, desarrollador indie de Bogotá y estudiante de Ingeniería de Software.<br>
                 Empecé haciendo juegos gracias a los tutoriales de Guinxu y Alva Majo, pasé por GameMaker, Unity y terminé encontrando mi hogar en Godot después de que el computador de mi novia casi explotara intentando abrir Unity.<br>
                 Hoy construyo experiencias de todo tipo: RPG, plataformas, terror o cualquier idea que despierte mi curiosidad. Porque este estudio nació de una idea muy simple:<br>
                 Si un videojuego puede hacerte reír, emocionarte o recordar algo especial, entonces vale la pena crearlo.<br>
@@ -30,27 +30,27 @@
             </div>
         </section>
         <section class="game-cards-container">
-            <h2>Juegos que mi gato disfrutaría si tuviera pulgares</h2>
+            <h2 id="game-card--title">Juegos que mi gato disfrutaría si tuviera pulgares</h2>
             <div class="game-cards--grid">
                 <div class="game-card">
                     <img class="game-img" src="Assets/img-placeholder.jpg" alt="Imagen Videojuego UmbrellaJam">
-                    <h3 class="game-title">Titulo</h3>
-                    <p class="game-description">un juego superhiper mega increble para mostrar que si se programar</p>
-                    <p class="download-label">Descargalo aqui:</p>
+                    <h3 class="game-title" id="game-title-1">Titulo</h3>
+                    <p class="game-description" id="game-description-1">un juego superhiper mega increble para mostrar que si se programar</p>
+                    <p class="download-label" id="game-download-label-1">Descargalo aqui:</p>
                     <a href="">Link de descarga a itch.io</a>
                 </div>
                 <div class="game-card">
                     <img class="game-img" src="Assets/img-placeholder.jpg" alt="Imagen Videojuego UmbrellaJam">
-                    <h3 class="game-title">Titulo</h3>
-                    <p class="game-description">un juego superhiper mega increble para mostrar que si se programar</p>
-                    <p class="download-label">Descargalo aqui:</p>
+                    <h3 class="game-title" id="game-title-2">Titulo</h3>
+                    <p class="game-description" id="game-description-2">un juego superhiper mega increble para mostrar que si se programar</p>
+                    <p class="download-label" id="game-download-label-2">Descargalo aqui:</p>
                     <a href="">Link de descarga a itch.io</a>
                 </div>
                 <div class="game-card">
                     <img class="game-img" src="Assets/img-placeholder.jpg" alt="Imagen Videojuego UmbrellaJam">
-                    <h3 class="game-title">Titulo</h3>
-                    <p class="game-description">un juego superhiper mega increble para mostrar que si se programar</p>
-                    <p class="download-label">Descargalo aqui:</p>
+                    <h3 class="game-title" id="game-title-3">Titulo</h3>
+                    <p class="game-description" id="game-description-3">un juego superhiper mega increble para mostrar que si se programar</p>
+                    <p class="download-label" id="game-download-label-3">Descargalo aqui:</p>
                     <a href="">Link de descarga a itch.io</a>
                 </div>
             </div>
@@ -59,10 +59,10 @@
     <footer>
         <section class="footer-up">
             <div class="footer-up--legal">
-                <p class="company-name">ELGatibius Games</p>
-                <p>© 2026 ELGatibius<br>Un humano, un gato y muchos bugs</p>
+                <p class="company-name" id="footer-company-name">ELGatibius Games</p>
+                <p id="copy-elgatibius">© 2026 ELGatibius<br>Un humano, un gato y muchos bugs</p>
                 <p>elgatibiusgames@gmail.com</p>
-                <p>Gracias a Guinxu, Alva Majo y la PC de mi novia (RIP)</p>
+                <p id="footer-thanks">Gracias a Guinxu, Alva Majo y la PC de mi novia (RIP)</p>
             </div>
             <div class="footer-up--social">
                 <a href=""><span class="tiktok"></span>TikTok</a>
@@ -75,5 +75,6 @@
             <div class="footer-down--ElGatibius"></div>
         </section>
     </footer>
+    <script src="js/app.js"></script>
 </body>
 </html>
