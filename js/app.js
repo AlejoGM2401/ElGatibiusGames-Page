@@ -4,6 +4,9 @@ let language = "es"
 // Object text in both languages
 const translations = {
     es: {
+        //Laptop menu:
+        home_button:"Inicio",
+        games_button:"Juegos",
         // Sobre mi
         about_title: "El día que casi explota una computadora...",
         about_description: "Soy Alejandro García, desarrollador indie de Bogotá y estudiante de Ingeniería de Software.<br>Empecé haciendo juegos gracias a los tutoriales de Guinxu y Alva Majo, pasé por GameMaker, Unity y terminé encontrando mi hogar en Godot después de que el computador de mi novia casi explotara intentando abrir Unity.<br>Hoy construyo experiencias de todo tipo: RPG, plataformas, terror o cualquier idea que despierte mi curiosidad. Porque este estudio nació de una idea muy simple:<br>Si un videojuego puede hacerte reír, emocionarte o recordar algo especial, entonces vale la pena crearlo.<br>Y sí, sigo teniendo a Crash Bandicoot 3 tatuado en el corazón.",
@@ -27,6 +30,8 @@ const translations = {
         footer_thanks: "Gracias a Guinxu, Alva Majo y la PC de mi novia (RIP)"
     },
     en: {
+        home_button:"Home",
+        games_button:"Games",
         // About section
         about_title: "The day a computer almost exploded...",
         about_description: "I'm Alejandro García, an indie developer from Bogotá and a Software Engineering student.<br>I started making games thanks to tutorials by Guinxu and Alva Majo. I went through GameMaker, Unity, and ended up finding my home in Godot after my girlfriend's computer almost exploded trying to open Unity.<br>Today I build all kinds of experiences: RPGs, platformers, horror, or any idea that sparks my curiosity. Because this studio was born from a simple idea:<br>If a video game can make you laugh, get emotional, or remember something special, then it's worth creating.<br>And yes, I still have Crash Bandicoot 3 tattooed on my heart.",
@@ -65,6 +70,10 @@ buttonLang.addEventListener("click", () => {
 
 function changeLanguage(lang){
     currentLanguage = lang;
+
+    //Menu
+    document.getElementById("home-button").textContent = translations[lang].home_button
+    document.getElementById("games-button").textContent = translations[lang].games_button
 
     //Update elements
     document.getElementById("about-title").innerHTML = translations[lang].about_title;
