@@ -14,8 +14,8 @@ const translations = {
         // Seccion Juegos
         game_card__title: "Juegos que mi gato disfrutaría si tuviera pulgares",
         games_title: "Juegos que mi gato disfrutaría si tuviera pulgares",
-        game_title_1: "Título del juego 1",
-        game_desc_1: "un juego superhiper mega increíble para mostrar que sí sé programar",
+        game_title_1: "It's Raining Men",
+        game_desc_1: "Salta de un avión. Esquiva nubes, pájaros y rayos. Llega a tierra sano y salvo.",
         download_label_1: "Descárgalo aquí:",
         game_title_2: "Título del juego 2",
         game_desc_2: "un juego superhiper mega increíble para mostrar que sí sé programar",
@@ -38,8 +38,8 @@ const translations = {
         
         // Games section
         game_card__title: "Games my cat would enjoy if he had thumbs",
-        game_title_1: "Game Title 1",
-        game_desc_1: "an incredibly super hyper mega game to show that I do know how to program",
+        game_title_1: "It's Raining Men",
+        game_desc_1: "Jump from a plane. Dodge clouds, birds, and lightning. Land safely.",
         download_label_1: "Download here:",
         game_title_2: "Game Title 2",
         game_desc_2: "an incredibly super hyper mega game to show that I do know how to program",
