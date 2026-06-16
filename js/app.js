@@ -17,12 +17,9 @@ const translations = {
         game_title_1: "It's Raining Men",
         game_desc_1: "Salta de un avión. Esquiva nubes, pájaros y rayos. Llega a tierra sano y salvo.",
         download_label_1: "Descárgalo aquí:",
-        game_title_2: "Título del juego 2",
-        game_desc_2: "un juego superhiper mega increíble para mostrar que sí sé programar",
+        game_title_2: "Escapa del Babadook",
+        game_desc_2: "Colecciona 5 calaveras. Esquiva al Babadook. Escapa del castillo.",
         download_label_2: "Descárgalo aquí:",
-        game_title_3: "Título del juego 3",
-        game_desc_3: "un juego superhiper mega increíble para mostrar que sí sé programar",
-        download_label_3: "Descárgalo aquí:",
         
         // Footer
         footer_company: "ELGatibius Games",
@@ -41,12 +38,9 @@ const translations = {
         game_title_1: "It's Raining Men",
         game_desc_1: "Jump from a plane. Dodge clouds, birds, and lightning. Land safely.",
         download_label_1: "Download here:",
-        game_title_2: "Game Title 2",
-        game_desc_2: "an incredibly super hyper mega game to show that I do know how to program",
+        game_title_2: "Escape from Babadook",
+        game_desc_2: "Collect 5 skulls. Dodge the Babadook. Escape the castle.",
         download_label_2: "Download here:",
-        game_title_3: "Game Title 3",
-        game_desc_3: "an incredibly super hyper mega game to show that I do know how to program",
-        download_label_3: "Download here:",
         
         // Footer
         footer_company: "ELGatibius Games",
@@ -89,10 +83,6 @@ function changeLanguage(lang){
     document.getElementById("game-title-2").innerHTML = translations[lang].game_title_2;
     document.getElementById("game-description-2").innerHTML = translations[lang].game_desc_2;
     document.getElementById("game-download-label-2").innerHTML = translations[lang].download_label_2;
-    
-    document.getElementById("game-title-3").innerHTML = translations[lang].game_title_3;
-    document.getElementById("game-description-3").innerHTML = translations[lang].game_desc_3;
-    document.getElementById("game-download-label-3").innerHTML = translations[lang].download_label_3;
     
     // Footer
     document.getElementById("footer-company-name").innerHTML = translations[lang].footer_company;
